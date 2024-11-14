@@ -1,0 +1,19 @@
+<div class='overflow-hidden whitespace-nowrap w-full'>
+  <div class='flex marquee-animation items-center'>
+    <slot />
+  </div>
+</div>
+
+<style>
+  .marquee-animation {
+    animation: marquee 30s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>

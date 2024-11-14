@@ -1,0 +1,39 @@
+---
+import Container from './container.astro'
+import User from './icons/user.astro'
+---
+
+<Container tag='section' class='w-full my-10 mb-12 flex flex-col'>
+  <div class='flex flex-row gap-x-4 items-center mb-10'>
+    <User class='size-10' />
+    <h2 class='text-2xl font-semibold'>Sobre Mi</h2>
+  </div>
+  <div class='flex flex-row w-full gap-x-5'>
+    <div class='w-[60%] flex flex-col gap-y-4'>
+      <p class='leading-6'>
+        Me llamo Jesús Enriqué, un desarrollador Full Stack apasionado, con
+        especialización en el desarrollo frontend.A lo largo de mi aprendizaje,
+        he tenido la oportunidad de <span class='text-yellow-200/90'
+          >liderar proyectos tanto en la web como en aplicaciones móviles</span
+        >.
+      </p>
+      <p class='leading-6'>
+        Como <span class='text-yellow-200/90'>CO-Founder de Hobby Business</span
+        >, una red social dedicada a unir a personas a través de sus hobbies, he
+        podido llevar mi visión de una comunidad en línea a una plataforma
+        funcional y moderna. Este proyecto es un reflejo de mi pasión por la
+        tecnología y por crear soluciones que realmente agreguen valor a sus
+        usuarios.
+      </p>
+      <p class='leading-6'>
+        Me motiva la oportunidad de aportar al ecosistema de desarrollo,
+        compartiendo conocimientos y colaborando en proyectos que generen un
+        cambio significativo.
+      </p>
+    </div>
+
+    <div class='size-72 ml-4'>
+      <img src='/profile.jpeg' class='w-full h-full rounded-full' />
+    </div>
+  </div>
+</Container>

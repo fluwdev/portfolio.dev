@@ -1,0 +1,35 @@
+---
+import Container from './container.astro'
+import Linkedln from './icons/linkedln.astro'
+import Github from './icons/github.astro'
+import Link from './link.astro'
+import Email from './icons/email.astro'
+import Hobby from './icons/hobby.astro'
+---
+
+<Container
+  tag='header'
+  class='w-full flex justify-between py-3 px-2 mx-auto border-b-2 border-white/5'
+>
+  <span class='flex flex-row gap-x-3 max-sm:gap-x-2 text-sm items-center'>
+    <div
+      class='size-10 flex justify-center items-center bg-neutral-800/80 rounded-full p-1'
+    >
+      <Email class='opacity-75' />
+    </div>
+    <p class='opacity-75 max-sm:text-xs'>jesusalcalarojas@gmail.com</p>
+  </span>
+  <nav class='flex items-center justify-center'>
+    <ul class='flex flex-row gap-10 max-sm:gap-x-5'>
+      <Link
+        href='https://www.linkedin.com/in/cto-jesus-alcala/'
+        target='_black'
+      >
+        <Linkedln class='size-7' />
+      </Link>
+      <Link href='https://github.com/fluwdev' target='_black'>
+        <Github class='size-7' />
+      </Link>
+    </ul>
+  </nav>
+</Container>

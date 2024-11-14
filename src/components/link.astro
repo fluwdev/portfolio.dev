@@ -1,0 +1,11 @@
+---
+interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
+
+const props = Astro.props
+---
+
+<li class='hover:scale-110 hover:cursor-pointer transition-all block'>
+  <a class='text-white' {...props}>
+    <slot />
+  </a>
+</li>

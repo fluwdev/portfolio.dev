@@ -1,0 +1,63 @@
+---
+import Container from './container.astro'
+import Marquee from './marquee.astro'
+import Golang from './icons/kills/golang.astro'
+import Graphql from './icons/kills/graphql.astro'
+import JavaScript from './icons/kills/javascript.astro'
+import TypeScript from './icons/kills/typescript.astro'
+import Html from './icons/kills/html.astro'
+import Css from './icons/kills/css.astro'
+import AstroIcon from './icons/kills/astro-icon.astro'
+import Deno from './icons/kills/deno.astro'
+import Electron from './icons/kills/electron.astro'
+import Vite from './icons/kills/vite.astro'
+import Expo from './icons/kills/expo.astro'
+import Git from './icons/kills/git.astro'
+import Mongodb from './icons/kills/mongodb.astro'
+import Mysql from './icons/kills/mysql.astro'
+import Postgresql from './icons/kills/postgresql.astro'
+import Supabase from './icons/kills/supabase.astro'
+import Storybook from './icons/kills/storybook.astro'
+import Node from './icons/kills/node.astro'
+import React from './icons/kills/react.astro'
+import Vitetest from './icons/kills/vitetest.astro'
+import Tailwind from './icons/kills/tailwind.astro'
+import Nextjs from './icons/kills/nextjs.astro'
+
+const languajes = [
+  Golang,
+  Graphql,
+  JavaScript,
+  TypeScript,
+  Html,
+  Css,
+  AstroIcon,
+  Deno,
+  Tailwind,
+  Nextjs,
+  Vitetest,
+  Electron,
+  Vite,
+  Expo,
+  Git,
+  Mongodb,
+  Mysql,
+  Postgresql,
+  Supabase,
+  Storybook,
+  Node,
+  React,
+]
+---
+
+<Container tag='section' class='mt-20 w-full flex flex-col mb-10 grayscale'>
+  <Marquee>
+    {
+      languajes.map((Icon) => (
+        <div class='mr-5'>
+          <Icon />
+        </div>
+      ))
+    }
+  </Marquee>
+</Container>
