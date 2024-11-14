@@ -3,7 +3,11 @@ import Container from './container.astro'
 ---
 
 <Container tag='section' class='flex flex-col pt-16 w-full items-center'>
-  <img src='./profile.jpeg' class='size-28 rounded-full' /></Container
+  <img
+    src='./profile.jpeg'
+    alt='Foto personal'
+    class='size-28 rounded-full'
+  /></Container
 >
 <p class='block mt-5 text-xl opacity-80'>Hola, Soy Jesús Alcalá👋</p>
 <h1
@@ -14,8 +18,10 @@ import Container from './container.astro'
     >únicas y modernas</span
   >.
 </h1>
-<button
+<a
+  download='/CV.pdf'
+  href='/CV.pdf'
   class='flex items-center justify-center w-36 h-10 bg-neutral-800/60 mt-10 relative rounded-md overflow-hidden text-center py-2 after:absolute after:w-full after:h-full after:-translate-x-[100%] after:bg-white hover:text-dark transition-colors hover:after:translate-x-0 after:transition-all'
 >
-  <span class='z-10'>Descargar CV</span></button
+  <span class='z-10'>Descargar CV</span></a
 >
