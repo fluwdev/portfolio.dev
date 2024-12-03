@@ -2,9 +2,14 @@
 import Container from './container.astro'
 import Code from './icons/code.astro'
 import ExternalLink from './icons/external-link.astro'
+import Github from './icons/github.astro'
+import AstroIcon from './icons/kills/astro-icon.astro'
+import Typescript from './icons/kills/typescript.astro'
+import Vite from './icons/kills/vite.astro'
+import Vitetest from './icons/kills/vitetest.astro'
 ---
 
-<Container tag='section' class='mt-20 w-full flex flex-col mb-10'>
+<Container tag='section' class='mt-20 w-full flex flex-col mb-10 gap-y-10'>
   <div class='flex flex-row gap-x-4 items-center mb-10 max-s'>
     <Code class='size-10' />
     <h2 class='text-2xl font-semibold'>Proyectos</h2>
@@ -37,6 +42,48 @@ import ExternalLink from './icons/external-link.astro'
         accesible, enfocándose en la experiencia del usuario y en la simplicidad
         de la navegación.
       </p>
+    </div>
+  </Container>
+  <Container
+    tag='article'
+    class='w-full flex flex-row gap-x-8 relative max-sm:flex-col max-sm:w-[100%] mx-auto'
+  >
+    <a
+      target='_blank'
+      title='Visitar el proyecto'
+      href='https://fluwtate.vercel.app/'
+      class='absolute right-0 z-10 flex items-center justify-center transition-all hover:scale-110 cursor-pointer opacity-60 hover:opacity-100'
+    >
+      <ExternalLink />
+    </a>
+    <a
+      target='_blank'
+      title='Visitar el proyecto'
+      href='https://github.com/fluwdev/fluwtate'
+      class='absolute right-10 z-10 flex items-center justify-center transition-all hover:scale-110 cursor-pointer opacity-60 hover:opacity-100'
+    >
+      <Github />
+    </a>
+    <picture class='max-sm:w-full w-[450px] h-auto rounded-md overflow-hidden'>
+      <img
+        src='/project-library.webp'
+        class='w-full h-full'
+        alt='Preview proyecto fluwtate'
+      />
+    </picture>
+    <div class='flex flex-col w-[60%] max-sm:w-full max-sm:mt-5'>
+      <h3 class='text-2xl font-bold'>Fluwtate</h3>
+      <p class='mt-2 text-base opacity-80'>
+        Fluwstate es un proyecto de código abierto que permite crear y gestionar
+        estados globales de una forma simple y intuitiva. Cuenta con una
+        documentación detallada y una API amigable para facilitar la integración
+        con otros proyectos.
+      </p>
+      <div class='mt-20 flex flex-row gap-x-5 justify-end'>
+        <Typescript class='w-8 h-8' />
+        <Vitetest class='w-8 h-8' />
+        <Vite class='w-8 h-8' />
+      </div>
     </div>
   </Container>
 </Container>
